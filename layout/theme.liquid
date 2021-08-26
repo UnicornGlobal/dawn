@@ -1,16 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
-  <!-- MANAGED BY LOCATION REDIRECT APP. DO NOT DELETE -->
-  {% if content_for_header contains 'adminBarInjector' and content_for_header contains '"isMerchantRequest":true' %}
-  {% elsif content_for_header contains 'previewBarInjector' and content_for_header contains '"isMerchantRequest":' %}
-  {% elsif content_for_header contains 'Shopify.designMode = true' %}
-  {% elsif content_for_header contains '.shopifypreview.com' %}
-  {% else %}
-  <meta name="referrer" content="no-referrer-when-downgrade">
-  <script src="https://age-gate-demo.myshopify.com/apps/locate?_p={{ request.path }}"></script>
-  {% endif %}
-  <!-- END LOCATION REDIRECT APP -->
+  
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
