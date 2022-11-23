@@ -108,16 +108,7 @@
   </head>
 
   <body>
-  <!-- MANAGED BY AGE GATE APP. DO NOT DELETE -->
-  {% if content_for_header contains 'adminBarInjector' and content_for_header contains '"isMerchantRequest":true' %}
-  {% elsif content_for_header contains 'previewBarInjector' and content_for_header contains '"isMerchantRequest":' %}
-  {% elsif content_for_header contains 'Shopify.designMode = true' %}
-  {% elsif content_for_header contains '.shopifypreview.com' %}
-  {% else %}
-      <meta name="referrer" content="no-referrer-when-downgrade">
-      <script src="https://age-gate-demo.myshopify.com/apps/age-gate" onerror="console.error('Did you forgot to disable Age Gate before uninstalling? Remove the code from your `theme.liquid` file, or reinstall, disable, and uninstall again.');"></script>
-  {% endif %}
-  <!-- END AGE GATE APP -->
+  
   <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
