@@ -108,15 +108,7 @@
   </head>
 
   <body>
-  <!-- MANAGED BY AGE GATE APP. DO NOT DELETE -->
-  {% capture CFH %}{{ content_for_header }}{% endcapture %}
-  {% if customer.tags contains "admin" or request.design_mode %}
-  {% elsif CFH contains 'adminBar' or CFH contains 'previewBar' %}
-  {% else %}
-      <meta name="referrer" content="no-referrer-when-downgrade">
-      <script src="https://{{ request.host }}/apps/age-gate-staging" onerror="console.error('Did you forgot to disable Age Gate before uninstalling? Remove the code from your `theme.liquid` file, or reinstall, disable, and uninstall again.');"></script>
-  {% endif %}
-  <!-- END AGE GATE APP -->
+  
   <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
